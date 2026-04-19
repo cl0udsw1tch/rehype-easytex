@@ -20,5 +20,5 @@ const file = await unified()
     .use(rehypeStringify)
     .process(await read(path.join(process.cwd(), "test", "input.html")))
 
-file.path = path.join(process.cwd(), "test", "output.html")
+file.path = "./test/output.html"
 await write(file)
