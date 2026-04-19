@@ -94,7 +94,7 @@ This allows `rehype-katex` to process math expressions as if they were written i
 ```html
 <p>
   This is inline math:
-  <span class="katex">...</span>
+  <span class="math-inline">...</span>
 </p>
 
 <p>
