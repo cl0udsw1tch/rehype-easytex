@@ -1,12 +1,13 @@
 {
-    "name": "tex-pipeline",
+    "name": "rehype-tex$",
     "type": "module",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "author": "Nurein Umeya",
     "license": "ISC",
     "description": "",
     "devDependencies": {
