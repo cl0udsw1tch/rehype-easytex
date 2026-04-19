@@ -1,5 +1,5 @@
 import { unified } from 'unified';
-import rehypeTex$ from "../dist/index.js"
+import rehypeEasytex from "../dist/index.js"
 import rehypeParse from 'rehype-parse'
 import rehypeDocument from "rehype-document";
 import rehypeKatex from "rehype-katex";
@@ -12,7 +12,7 @@ const file = await unified()
     .use(rehypeParse, {
         fragment: true
     })
-    .use(rehypeTex$)
+    .use(rehypeEasytex)
     .use(rehypeKatex)
     .use(rehypeDocument, {
         css: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css'

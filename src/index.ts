@@ -13,7 +13,7 @@ const regexFindTex = /(?:(?<!\\)(?:\$)([^\$]+)(?<!\\)(?:\$))|(?:(?<!\\)(?:\$\$)(
 
 
 
-function rehypeTex$(this: Processor, options?: any): Transformer | void {
+function rehypeEasytex(this: Processor, options?: any): Transformer | void {
 
     const transformer = (tree: Node, file: VFile): Node | void | Promise<Node | void> => {
         //console.log(JSON.stringify(tree, null, 2))
@@ -75,7 +75,7 @@ function rehypeTex$(this: Processor, options?: any): Transformer | void {
     return transformer
 }
 
-export default rehypeTex$
+export default rehypeEasytex
 
 
 
